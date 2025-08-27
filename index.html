@@ -14,6 +14,7 @@
       align-items: center;
       height: 100vh;
     }
+
     .card {
       background: #fff;
       padding: 30px;
@@ -23,7 +24,75 @@
       width: 90%;
       text-align: center;
     }
-    .logo img { width: 160px; margin-bottom: 20px; }
+
+    .logo {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #7a3eff;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .card h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .card h2 {
+      font-size: 15px;
+      font-weight: 400;
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    .input-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      border: 2px solid #eee;
+      border-radius: 12px;
+      padding: 10px;
+      transition: 0.3s;
+    }
+
+    .input-box:hover {
+      border-color: #7a3eff;
+    }
+
+    .input-box input {
+      border: none;
+      outline: none;
+      flex: 1;
+      font-size: 16px;
+    }
+
+    .platforms {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .platforms button {
+      background: #f2f2f2;
+      border: none;
+      border-radius: 12px;
+      padding: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .platforms button:hover {
+      background: #d8c7ff;
+      transform: scale(1.05);
+      color: #4a00e0;
+    }
+
     .btn {
       background: linear-gradient(135deg, #7a3eff, #4a00e0);
       color: #fff;
@@ -34,6 +103,27 @@
       border: none;
       border-radius: 12px;
       cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #5a2bcc, #2e007a);
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px;
+      }
+      .logo {
+        font-size: 26px;
+      }
+      .card h1 {
+        font-size: 20px;
+      }
+      .platforms {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 
@@ -45,13 +135,20 @@
 </head>
 <body>
   <div class="card">
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Roblox_Logo_2022.png" alt="Roblox Logo">
-    </div>
+    <div class="logo">ROBLOX</div>
     <h1>مرحبا بك 👋</h1>
     <h2>أدخل اسمك واكمل للحصول على العرض</h2>
 
-    <input type="text" id="username" placeholder="أدخل اسمك أو الإيميل" style="width:100%;padding:10px;margin-bottom:20px;border-radius:10px;border:1px solid #ccc">
+    <div class="input-box">
+      <input type="text" id="username" placeholder="أدخل اسمك أو الإيميل">
+    </div>
+
+    <div class="platforms">
+      <button>Windows</button>
+      <button>Xbox</button>
+      <button>Android</button>
+      <button>iOS</button>
+    </div>
 
     <button class="btn" onclick="openLocker()">استمر</button>
   </div>
